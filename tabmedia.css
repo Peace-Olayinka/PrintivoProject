@@ -1,0 +1,142 @@
+@media screen and (max-width:1000px) {
+    #nav1{
+        display: none;
+    }
+}
+@media screen and (max-width:1000px) {
+    #topnav2{
+        display: none;
+    }
+}
+@media screen and (max-width:800px) {
+    #topnav2drop{
+        display: none;
+    }
+}
+/* sec1 */
+@media screen and (max-width:800px) {
+    #sec1{
+        background-image: url(./Card3_n9kqin000.webp);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: right;
+        background-color:#ECE8D9 ;
+        color: #384A62; 
+    }
+}
+@media screen and (max-width:1100px) {
+    #sec1 h1{
+
+        font-family: "DM-Serif-Dispaly";
+        font-size: 4rem;
+    }
+}
+@media screen and (max-width:1100px) {
+    #sec1 h3{
+        color: #8996a6;
+        font-family: 'Arial Narrow';
+        font-size: large;
+     }
+}
+@media screen and (max-width:1100px) {
+    #sec1 input{
+        min-width: 70%;
+     }
+}
+/* sec2 */
+@media screen and (max-width:1100px) {
+    #sec2a h2{
+        font-size: larger;
+    }
+}
+@media screen and (max-width:1100px) {
+    #sec2a span{
+        font-size: medium !important; 
+    }
+}
+@media screen and (max-width:1100px) {
+    #sec2b{
+        display: grid;
+        grid-template-columns: repeat(3, 33%);
+        gap: 30px;
+        justify-content: center;
+    }
+}
+@media screen and (max-width:1100px) {
+    #sec2b button {
+        min-width: 90% !important;
+        font-size: small !important;
+    }
+}
+
+/* sec3 */
+@media screen and (max-width:1100px) {
+    #sec3a p{
+        font-size: large; 
+    }
+}
+/* sec4 */
+@media screen and (max-width:1100px) {
+    #secnig h2{
+        font-size: 1.5rem;
+        /* text-align: center; */
+    }
+}
+@media screen and (max-width:1100px) {
+    #secnig h4{
+        font-size: medium;
+        /* text-align: center; */
+    }
+}
+@media screen and (max-width:1100px) {
+    #sec4 img{
+       max-width: 100%;
+       
+    }
+}
+/* sec5  and sec6*/
+@media screen and (max-width:1100px) {
+    #sec5a h2{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+}
+@media screen and (max-width:1100px) {
+    #sec5b{
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        gap: 30px;
+        justify-content:  center;
+    }
+}
+
+/* sec6 */
+@media screen and (max-width:1100px) {
+    #sec6 div{
+       padding: 0em !important;
+    }
+}
+@media screen and (max-width:1100px) {
+    #sec6 img{
+       height: 60px !important;
+       width: 60px !important;
+    }
+}
+/* sec7 */
+@media screen and (max-width:1100px) {
+    #sec7b {
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        gap: 30px;
+        /* justify-content:  center; */
+    }
+}
+/* foot */
+@media screen and (max-width:1100px) {
+    #footdv {
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        gap: 30px;
+        /* justify-content:  center; */
+    }
+}

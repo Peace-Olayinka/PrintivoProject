@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>printivo project</title>
+    
+    <link rel="stylesheet" href="index.js">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="tabmedia.css">
+    <link rel="stylesheet" href="smallmedia.css">
+   
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+    <script src="https://use.fontawesome.com/3c538cc85f.js"></script>
+
+</head>
+<body>
+    <!-- navbar 1 -->
+    <nav id="nav1" class="navbar navbar-expand-lg bg-light fw-bold px-5">
+        <div class="container">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link fs-6" aria-current="page" href="#">Corporate Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fs-6 ms-5" href="#">Discover Stores</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fs-6 ms-5" href="#">Track Orders</a>
+              </li>
+            </ul>
+            
+            <li id="topbtn" style="list-style-type:none" class="fs-6"> Need help? Call: <a href="" class="text-decoration-none"> +2349033394403, +2348109721617</a></li>
+            <li style="list-style-type:none"><img src="./project/whatsapplogo.svg" alt="" class="ms-4"></li>
+
+            <li style="list-style-type:none"><button id="topbtn" class="btn btn-sm border border-secondary  rounded-5 ms-4 fw-bold fs-6 py-2" type="submit"><svg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M16 2.667H0v10.666h16V2.666z' fill='#F0F0F0'/><path d='M5.333 2.667H0v10.666h5.333V2.666zM16 2.667h-5.333v10.666H16V2.666z' fill='#4A945A'/></svg> &nbsp; Nigeria</button></li>
+          </div>
+        </div>
+    </nav>
+
+    <!-- navbar 2 -->
+    <nav id="topnav2" class="navbar  navbar-expand-lg  px-5 pb-5">
+      <div class="container">
+          <a class="navbar-brand fw-bold fs-4" href="#"><img src="./project/printivologo.svg" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ms-auto">
+              <a id="active" class="nav-link fw-bold" aria-current="page" href="#sec1">Home</a>
+              <a class="nav-link fw-bold" href="#sec2">All Products</a>
+              <a class="nav-link fw-bold" href="#">Become a Reseller</a>
+              <a class="nav-link fw-bold" href="#">Cost Calculator</a>
+              <a class="nav-link fw-bold text-danger ms-3" href="#">Sign in</a>
+              <a class="nav-link fw-bold" href="#">Create Account</a>
+              <a class="nav-link fw-bold" href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+            </div> 
+          </div>
+        </div>
+    </nav> 
+
+    <!-- other navs -->
+
+    <!-- nav1b -->
+    <div id="nav1b" class=" px-5 py-2 d-flex ">
+      <span> Need help? Call: <a href="" class="text-decoration-none"> +2349033394403, +2348109721617</a></span>
+      <a href=""><img src="./project/whatsapplogo.svg" alt="" class=""></a>
+      <button id="topbtn" class="btn border border-secondary  rounded-5 fw-bold fs-6 py-1 ms-2" type="submit"><svg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M16 2.667H0v10.666h16V2.666z' fill='#F0F0F0'/><path d='M5.333 2.667H0v10.666h5.333V2.666zM16 2.667h-5.333v10.666H16V2.666z' fill='#4A945A'/></svg> &nbsp; Nigeria</button>
+    </div>
+
+
+    <!-- topnav2b onscroll for normal screen js-->
+     <nav id="topnav2drop" class="navbar navbar-expand-lg  px-5 pb-5 bg-white drop2" onscroll="dropnav()">
+      <div class="container">
+          <a class="navbar-brand fw-bold fs-4" href="#"><img src="./project/printivologo.svg" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ms-auto">
+              <a id="active" class="nav-link fw-bold" aria-current="page" href="#sec1">Home</a>
+              <a class="nav-link fw-bold" href="#sec2">All Products</a>
+              <a class="nav-link fw-bold" href="#">Become a Reseller</a>
+              <a class="nav-link fw-bold" href="#">Cost Calculator</a>
+              <a class="nav-link fw-bold text-danger ms-3" href="#">Sign in</a>
+              <a class="nav-link fw-bold" href="#">Create Account</a>
+              <a class="nav-link fw-bold" href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+            </div> 
+          </div>
+        </div>
+    </nav> 
+
+
+    <!-- nav2b mediascreen -->
+    <div id="nav2b" class=" p-5 d-flex">
+      <a href=""> <img src="./project/printivologo.svg" alt=""></a>
+      <a class="nav-link fw-bold text-danger ms-3" href="#">Sign in</a>
+      <a class="nav-link fw-bold" href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+    </div>
+
+    <!--dropdown menu on media screen -->
+    <section id="menu" class="px-5">
+      <button class="btn border border-none rounded-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-controls="offcanvas">Menu</button>
+    </section>
+    
+    <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasLabel"> Items</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+
+      <div class="offcanvas-body">
+          <a href="index.html" class="text-decoration-none text-dark mb-3">Home</a>
+          <a href="#sec2" class="text-decoration-none text-dark my-3">All Products</a>
+          <a href="#sec2" class="text-decoration-none text-dark my-3">banners & large formats <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+          <a href="#sec2" class="text-decoration-none text-dark my-3">brochures <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+          <a href="#sec2" class="text-decoration-none text-dark my-3">business cards <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+          <a href="#sec2" class="text-decoration-none text-dark my-3">calendars <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+          <a href="#sec2" class="text-decoration-none text-dark my-3">campaaign materials <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+          <a href="#sec2" class="text-decoration-none text-dark my-3">caps & hats <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+          <a href="#sec2" class="text-decoration-none text-dark my-3">clothesTags <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+          <a href="#sec2" class="text-decoration-none text-dark my-3">Corporate gifts <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+          <a href="#sec2" class="text-decoration-none text-dark my-3">courier bags <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+          <a href="#sec2" class="text-decoration-none text-dark my-3">envelopes <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+          <a href="#sec2" class="text-decoration-none text-dark my-3">fliers & handbills <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+          <a href="#sec2" class="text-decoration-none text-dark my-3">frames & wall arts <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+          <a href="#sec2" class="text-decoration-none text-dark my-3">greeting cards <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+          <a href="#sec2" class="text-decoration-none text-dark my-3">hoodies <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+          <a href="#sec2" class="text-decoration-none text-dark my-3">ID cards <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+          <a href="#sec2" class="text-decoration-none text-dark my-3">labels <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+          <a href="#sec2" class="text-decoration-none text-dark my-3">letterhead <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+          <a href="#sec2" class="text-decoration-none text-dark my-3">mugs <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+          <a href="#sec2" class="text-decoration-none text-dark my-3">notepads and jotters <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+          <a href="#sec2" class="text-decoration-none text-dark my-3">paper bags <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+          <a href="#sec2" class="text-decoration-none text-dark my-3">personal protective products <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+          <a href="#sec2" class="text-decoration-none text-dark my-3">posters <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+          <a href="#sec2" class="text-decoration-none text-dark my-3">presentation folders <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+          <a href="#sec2" class="text-decoration-none text-dark my-3">stickers <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+          <a href="#sec2" class="text-decoration-none text-dark my-3">sweatshirts <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+          <a href="#sec2" class="text-decoration-none text-dark my-3">T-Shirts <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+          <a href="#sec2" class="text-decoration-none text-dark my-3">tote bags <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+          <a href="#sec2" class="text-decoration-none text-dark my-3">umbrella <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+          <a href="#sec2" class="text-decoration-none text-dark my-3">wedding stationery <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+          <a href="#sec2" class="text-decoration-none text-dark my-3">become a reseller</a>
+          <a href="#sec2" class="text-decoration-none text-dark my-3">cost calculator</a>
+          
+      </div>
+    </div>
+
+
+    <!-- nav2c onscroll for mediascreen js -->
+     <div id="nav2cdrop" class=" p-5 bg-white" onscroll="mediadropnav()">
+      <a href=""> <img src="./project/printivologo.svg" alt=""></a>
+      <a class="nav-link fw-bold text-danger ms-3" href="#">Sign in</a>
+      <a class="nav-link fw-bold" href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+      <form action="" class="mt-5 d-flex gap-2">
+        <input type="submit" value="Search" class="text-bg-danger border border-danger p-1"><input type="text" placeholder=" Quick Search" class=" border border-secondary rounded-0 p-1"> 
+      </form>
+    </div>
+
+
+    <!-- section1 section1 section1 section1 -->
+    <section id="sec1" class="p-5">
+
+      <div class="">
+        <h1 class="fw-bold"> Quality Prints</h1>
+        <h3 class=" fw-bold"> Shipped to your doorstep</h3>
+        <form action="" class="mt-5">
+          <label for="" class="fw-bold ">What would you like to print today?</label><br>
+          <input type="text" placeholder="Search for Business cards, T-shirts, Mugs, etc" class="p-4 w-50 border border-none">
+          <a id="sec1search" href="" class=" bg-white py-3 px-2 border border-white text-decoration-none"><img src="./project/searchlogo.svg" alt="" ></a>
+        </form>
+      </div>
+    </section>  
+
+
+    <!-- section2 section2 section2 section2 -->
+   <section id="sec2" class="p-5">
+      <div id="sec2a">
+        <h2 class="fw-bold"> Popular Products</h2>
+        <p class="text-end"><a href="" class="text-decoration-none text-danger fw-bold">See All Products</a></p>
+      </div>
+
+      <div id="sec2b" class=" ">
+        <div id="sec2cards" class="">
+          <div id="imgholder" class="">
+            <a href=""><img id="cardimg" src="./project/card1.png" alt="" class="w-100"></a>
+          </div>
+          
+          <div class="p-3">
+            <a href="" class="text-decoration-none">
+              <p><strong id="darktxt"> Two-sided Business Cards</strong></p>
+              <p><strong id="lighttxt">STARTING AT</strong></p>
+              <p><strong id="darktxt" class="fs-5">#7,700 <span id="lighttxt" class="fs-6">per 100</span></strong></p>
+            </a>
+            <button class="btn btn-danger mt-2 px-3 py-2 fw-bold">Browse Two-sided Bu... &nbsp;></button>
+          </div>
+        </div>
+
+        <div id="sec2cards" class="">
+          <div id="imgholder">
+            <a href=""><img id="cardimg" src="./project/card2.png" alt="" class=" w-100 "></a>
+          </div>
+  
+          <div class="p-3">
+            <a href="" class="text-decoration-none">
+              <p><strong id="darktxt"> Two-sided Business Cards</strong></p>
+              <p><strong id="lighttxt">STARTING AT</strong></p>
+              <p><strong id="darktxt" class="fs-5">#7,700 <span id="lighttxt" class="fs-6">per 100</span></strong></p>
+            </a>
+            <button class="btn btn-danger mt-2 px-3 py-2 fw-bold">Browse Two-sided Bu... &nbsp;></button>
+          </div>
+        </div>
+
+       <div id="sec2cards">
+         <div id="imgholder">
+            <a href=""><img id="cardimg" src="./project/card3.png" alt="" class=" w-100"></a>
+         </div>
+
+          <div class="p-3">
+            <a href="" class="text-decoration-none">
+                <p><strong id="darktxt"> Two-sided Business Cards</strong></p>
+                <p><strong id="lighttxt">STARTING AT</strong></p>
+                <p><strong id="darktxt" class="fs-5">#7,700 <span id="lighttxt" class="fs-6">per 100</span></strong></p>
+            </a>
+           <button class="btn btn-danger mt-2 px-3 py-2 fw-bold">Browse Two-sided Bu... &nbsp;></button>
+          </div>
+       </div>
+
+       <div id="sec2cards">
+        <div id="imgholder">
+          <a href=""><img id="cardimg" src="./project/card4.jpg" alt="" class=" w-100"></a>
+        </div>
+
+        <div class="p-3">
+          <a href="" class="text-decoration-none">
+            <p><strong id="darktxt"> Two-sided Business Cards</strong></p>
+            <p><strong id="lighttxt">STARTING AT</strong></p>
+            <p><strong id="darktxt" class="fs-5">#7,700 <span id="lighttxt" class="fs-6">per 100</span></strong></p>
+          </a>
+          <button class="btn btn-danger mt-2 px-3 py-2 fw-bold">Browse Two-sided Bu... &nbsp;></button>
+        </div>
+       </div>
+
+       <div id="sec2cards">
+        <div id="imgholder">
+          <a href=""><img id="cardimg" src="./project/card5.png" alt="" class=" w-100"></a>
+        </div>
+
+        <div class="p-3">
+          <a href="" class="text-decoration-none">
+            <p><strong id="darktxt"> Two-sided Business Cards</strong></p>
+            <p><strong id="lighttxt">STARTING AT</strong></p>
+            <p><strong id="darktxt" class="fs-5">#7,700 <span id="lighttxt" class="fs-6">per 100</span></strong></p>
+          </a>
+          <button class="btn btn-danger mt-2 px-3 py-2 fw-bold">Browse Two-sided Bu... &nbsp;></button>
+        </div>
+       </div>
+       <div id="sec2cards">
+        <div id="imgholder">
+          <a href=""><img id="cardimg" src="./project/card6.png" alt="" class=" w-100 "></a>
+        </div>
+
+        <div class="p-3">
+          <a href="" class="text-decoration-none">
+            <p><strong id="darktxt"> Two-sided Business Cards</strong></p>
+            <p><strong id="lighttxt">STARTING AT</strong></p>
+            <p><strong id="darktxt" class="fs-5">#7,700 <span id="lighttxt" class="fs-6">per 100</span></strong></p>
+          </a>
+          <button class="btn btn-danger mt-2 px-3 py-2 fw-bold">Browse Two-sided Bu... &nbsp;></button>
+        </div>
+       </div>
+
+       <div id="sec2cards">
+        <div id="imgholder">
+          <a href=""><img id="cardimg" src="./project/card7.png" alt="" class=" w-100"></a>
+        </div>
+
+        <div class="p-3">
+          <a href="" class="text-decoration-none">
+            <p><strong id="darktxt"> Two-sided Business Cards</strong></p>
+            <p><strong id="lighttxt">STARTING AT</strong></p>
+            <p><strong id="darktxt" class="fs-5">#7,700 <span id="lighttxt" class="fs-6">per 100</span></strong></p>
+          </a>
+          <button class="btn btn-danger mt-2 px-3 py-2 fw-bold">Browse Two-sided Bu... &nbsp;></button>
+        </div>
+       </div>
+
+        <div id="sec2cards">
+          <div id="imgholder">
+            <a href=""><img id="cardimg" src="./project/card8.png" alt="" class=" w-100"></a>
+          </div>
+
+         <div class="p-3">
+            <a href="" class="text-decoration-none">
+              <p><strong id="darktxt"> Two-sided Business Cards</strong></p>
+              <p><strong id="lighttxt">STARTING AT</strong></p>
+              <p><strong id="darktxt" class="fs-5">#7,700 <span id="lighttxt" class="fs-6">per 100</span></strong></p>
+            </a>
+            <button class="btn btn-danger mt-2 px-3 py-2 fw-bold">Browse Two-sided Bu... &nbsp;></button>
+         </div>
+        </div>
+
+       <div id="sec2cards">
+        <div id="imgholder">
+          <a href=""><img id="cardimg" src="./project/card9.png" alt="" class=" w-100"></a>
+        </div>
+
+        <div class="p-3">
+          <a href="" class="text-decoration-none">
+            <p><strong id="darktxt"> Two-sided Business Cards</strong></p>
+            <p><strong id="lighttxt">STARTING AT</strong></p>
+            <p><strong id="darktxt" class="fs-5">#7,700 <span id="lighttxt" class="fs-6">per 100</span></strong></p>
+          </a>
+          <button class="btn btn-danger mt-2 px-3 py-2 fw-bold">Browse Two-sided Bu... &nbsp;></button>
+        </div>
+       </div>
+
+       <div id="sec2cards">
+        <div id="imgholder">
+          <a href=""><img id="cardimg" src="./project/card10.png" alt="" class=" w-100 "></a>
+        </div>
+
+        <div class="p-3">
+          <a href="" class="text-decoration-none">
+            <p><strong id="darktxt"> Two-sided Business Cards</strong></p>
+            <p><strong id="lighttxt">STARTING AT</strong></p>
+            <p><strong id="darktxt" class="fs-5">#7,700 <span id="lighttxt" class="fs-6">per 100</span></strong></p>
+          </a>
+          <button class="btn btn-danger mt-2 px-3 py-2 fw-bold">Browse Two-sided Bu... &nbsp;></button>
+        </div>
+       </div>
+          
+       <div id="sec2cards">
+        <div id="imgholder">
+          <a href=""><img id="cardimg" src="./project/card11.jpeg" alt="" class=" w-100"></a>
+        </div>
+
+        <div class="p-3">
+          <a href="" class="text-decoration-none">
+            <p><strong id="darktxt"> Two-sided Business Cards</strong></p>
+            <p><strong id="lighttxt">STARTING AT</strong></p>
+            <p><strong id="darktxt" class="fs-5">#7,700 <span id="lighttxt" class="fs-6">per 100</span></strong></p>
+          </a>
+          <button class="btn btn-danger mt-2 px-3 py-2 fw-bold">Browse Two-sided Bu... &nbsp;></button>
+        </div>
+       </div>
+      </div>
+    </section>
+
+
+    <!-- section3 section3 section3 section3 -->
+    <section  id="sec2" class="p-5">
+      <div id="sec2a">
+        <h2 class="fw-bold"> Popular Categories</h2>
+        <p class="text-end"><a href="" class="text-decoration-none text-danger fw-bold">See All Products</a></p>
+      </div>
+
+      <div id="sec2b">
+        <div id="sec2cards">
+          <div id="imgholder">
+            <a href=""><img id="cardimg" src="./project/card12.png" alt="" class=" w-100"></a>
+          </div>
+  
+          <div class="p-3">
+            <a href="" class="text-decoration-none">
+              <p><strong id="darktxt"> Two-sided Business Cards</strong></p>
+              <p><strong id="lighttxt">STARTING AT</strong></p>
+              <p><strong id="darktxt" class="fs-5">#7,700 <span id="lighttxt" class="fs-6">per 100</span></strong></p>
+            </a>
+            <button class="btn btn-danger mt-2 px-3 py-2 fw-bold">Browse Two-sided Bu... &nbsp;></button>
+          </div>
+        </div>
+
+        <div id="sec2cards">
+          <div id="imgholder">
+            <a href=""><img id="cardimg" src="./project/card13.png" alt="" class=" w-100 "></a>
+          </div>
+  
+          <div class="p-3">
+            <a href="" class="text-decoration-none">
+              <p><strong id="darktxt"> Two-sided Business Cards</strong></p>
+              <p><strong id="lighttxt">STARTING AT</strong></p>
+              <p><strong id="darktxt" class="fs-5">#7,700 <span id="lighttxt" class="fs-6">per 100</span></strong></p>
+            </a>
+            <button class="btn btn-danger mt-2 px-3 py-2 fw-bold">Browse Two-sided Bu... &nbsp;></button>
+          </div>
+        </div>
+
+        <div id="sec2cards">
+          <div id="imgholder">
+            <a href=""><img id="cardimg" src="./project/card14.png" alt="" class=" w-100"></a>
+          </div>
+  
+          <div class="p-3">
+            <a href="" class="text-decoration-none">
+              <p><strong id="darktxt"> Two-sided Business Cards</strong></p>
+              <p><strong id="lighttxt">STARTING AT</strong></p>
+              <p><strong id="darktxt" class="fs-5">#7,700 <span id="lighttxt" class="fs-6">per 100</span></strong></p>
+            </a>
+            <button class="btn btn-danger mt-2 px-3 py-2 fw-bold">Browse Two-sided Bu... &nbsp;></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+   
+    <!-- section4 section4 section4 section4 -->
+    <section id="sec4" class="p-5">
+      <div id="secnig">
+        <h2 class="fw-bold mt-3"> Nigeria's No.1 Online Prints Shop</h2>
+        <h4 class=""> Our print services and solutions are trusted by these brands and <br> over 15,000 other businesses in Nigeria.</h3>
+        <img src="./project/hello.png" alt="" class="my-5">
+     </div>
+    </section>
+
+    <!-- section5 section5 section5 section5 -->
+    <section id="sec5" class="p-5">
+      <div id="secnig" class=" py-3"><h2><strong>What Customers Say about Us</strong></h2></div>
+
+      <div id="sec5b" class="py-3">
+        <div id="twitter" class="bg-white  px-3 py-5 d-flex gap-2">
+          <i class="fa fa-twitter text-primary fs-5 border border-secondary rounded-circle px-2 py-1 h-25" aria-hidden="true"></i>
+          <aside>
+            <h5 id="sec2txt2" class="fs-6 fw-bold">Amina Ebele <a href="" class="text-decoration-none">@aminaebele.com</a></h5>
+            <p id="sec2txt2"class="">I am now the unofficial <a href="" class="text-decoration-none"> @Printivo</a> ambassador. What these guys just pulled to ensure I got my menu cards today is stunning!</p>
+          </aside>
+        </div>
+
+        <div id="twitter" class="bg-white px-3 py-5 d-flex gap-2">
+          <i class="fa fa-twitter text-primary fs-5 border border-secondary rounded-circle px-2 py-1 h-25" aria-hidden="true"></i>
+          <aside>
+            <h5 id="sec2txt2" class="fs-6 fw-bold">Oluwatosin <a href="" class="text-decoration-none">@oluwatosin.com</a></h5>
+            <p id="txt2" class=""><a href="" class="text-decoration-none"> @Printivo</a> delivered my mugs in 24hrs. Thank you so much! It's nice doing business with you. More to come.</p>
+          </aside>
+        </div>
+
+        <div id="twitter" class="bg-white px-3 py-5 d-flex gap-2">
+          <i class="fa fa-twitter text-primary fs-5 border border-secondary rounded-circle px-2 py-1 h-25 " aria-hidden="true"></i>
+          <aside>
+            <h5 id="sec2txt2" class="fs-6 fw-bold">Oluwatosin <a href="" class="text-decoration-none">@oluwatosin.com</a></h5>
+            <p id="sec2txt2" class="">These guys <a href="" class="text-decoration-none"> @Printivo</a> are really awesome and affordable. Excellent customer service and delivery too. Thank you.</p>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- section6 section6 section6 section6 -->
+    <section id="sec6" class="p-5">
+      <div id="secnig" class="my-3"><h2><strong>You can count on us for:</strong></h2></div>
+
+      <div id="sec5b" class="subsec">
+        <div  class=" px-2 py-5 d-flex gap-2">
+          <img src="./project2/foot1.svg" alt="" class="h-75 w-50">
+          <aside>
+            <h5 id="sec2txt2" class="fs-6 fw-bold">Fast Turnaround Within Days</h5>
+            <p id="sec2txt2"class="">Your order gets to you within 3-7 working days via DHL or our very own Printivo Direct.</p>
+          </aside>
+        </div>
+
+        <div  class=" px-2 py-5 d-flex gap-2">
+          <img src="./project2/foot2.svg" alt="" class="h-75 w-50">
+          <aside>
+            <h5 id="sec2txt2" class="fs-6 fw-bold">100% Top Quality</h5>
+            <p id="txt2" class="">Only the finest materials, machines and people will be involved in fulfilling your order.</p>
+          </aside>
+        </div>
+
+        <div  class="px-2 py-5 d-flex gap-2">
+          <img src="./project2/foot3.svg" alt="" class="h-75 w-50">
+          <aside>
+            <h5 id="sec2txt2" class="fs-6 fw-bold">Affordable Services</h5>
+            <p id="sec2txt2" class="">All products are adequately priced to ensure you get value for your money at all times.</p>
+          </aside>
+        </div>
+      </div>
+    </section>
+        
+    <!-- section7 section7 section7 section7 -->
+    <section id="coys" class="p-5">
+      <div id="secnig" class="  my-3"><h2><strong>Our amazing work got noticed by:</strong></h2></div>
+
+      <div id="sec7b" class="py-5">
+        <div>
+          <img src="./project2/foot4.svg" alt=""> <br>
+          <a id="coylink" href="">Read the article here</a>
+        </div>
+
+        <div>
+          <img src="./project2/foot5.svg" alt=""><br>
+          <a id="coylink" href="">Read the article here</a>
+        </div>
+
+        <div>
+          <img src="./project2/foot6.png" alt=""><br>
+          <a id="coylink" href="">Read the article here</a>
+        </div>
+
+        <div> 
+          <img src="./project2/foot7.svg" alt=""><br>
+          <a id="coylink" href="">Read the article here</a>
+        </div>
+
+        <div>
+          <img src="./project2/foot8.svg" alt=""><br>
+          <a id="coylink" href="">Read the article here</a>
+        </div>
+      </div>
+    </section>
+         
+            
+    <!-- section8 section8 section8 section8 -->
+    <section id="foot" class="p-5">
+        <div id="footdv">
+          <div>
+            <h5 class="my-2">Printivo</h5>
+            <a href="" class="text-decoration-none"> <p>About Us <br>
+              Contact <br>
+              Track Order <br>
+              Printivo Promise <br>
+              Printivo Blog <br>
+              Career</p>
+            </a>
+          </div>
+
+          <div>
+            <h5 class="my-2">Make Money</h5>
+            <a href="" class="text-decoration-none"> <p>Refer a friend & earn N1,000 <br>
+              Become a Reseller <br>
+              Sell your Designs <br>
+              Merch Store</p>
+            </a>
+          </div>
+
+          <div>
+            <h5 class="my-2">Make Money</h5>
+            <a href="" class="text-decoration-none"> <p>Refer a friend & earn N1,000 <br>
+              Become a Reseller <br>
+              Sell your Designs <br>
+              Merch Store</p>
+            </a>
+          </div>
+
+          <div>
+            <h5 class="my-2">Follow Us</h5>
+            <a href="" class="text-decoration-none"><img src="./project3/facebooklogo.svg" alt=""> &nbsp; <img src="./project3/twitter.svg" alt="">&nbsp; <img src="./project3/linkInlogo.svg" alt="">&nbsp; <img src="./project3/instagramlogo.svg" alt="">
+            </a>
+            <br>
+            
+            <h5 class="my-2" >Accepted Payments</h5>
+            <img src="./project3/printivodirectlogo.png" alt="" >
+            <br>
+
+            <h5 class="my-2">Delivery</h5>
+            <img src="./project3/banktflogo.png" alt="" class="h-25 w-75">
+          </div>
+        </div>
+    </section>
+   
+    <!-- fotter  fotter  fotter  fotter -->
+    <footer class="text-center py-4">Copyright © 2021 Printivo. All rights reserved.</footer> 
+
+
+
+    <script>
+      // function dropnav() {
+      //   var topbar = htmBoss.scrollTop;
+      //   if (topbar > 50) {
+      //     topnav2drop.style.display = "block";
+      //   }else{
+      //     topnav2drop.style.display = "none";
+      //   }
+      // }
+
+      // var topbar = document.getElementById("topnav2drop");
+      // window.onscroll = function () {
+      //  "use strict"
+      //   if (document.body.scrollTop >= 50) {
+      //     topbar.style.display = "block";
+      //   }else{
+      //     topbar.style.display = "none";
+      //   }
+      // }
+
+
+      // function mediadropnav() {
+      //   var topbar = htmBoss.scrollTop;
+      //   if (topbar >= 50) {
+      //     nav2cdrop.style.display = "block";
+      //   }else{
+      //     nav2cdrop.style.display = "none";
+      //   }
+      // }
+    </script>
+
+  
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+</body>
+</html>
